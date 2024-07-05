@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="titulo">AluraGeek</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="productos-container">
+            <div class="productos">
+                <h2 class="name">Mis Productos</h2>
+                <div data-product class="container-producto"></div>
+            </div>
+
+            <div class="formulario-container">
+                <h2 class="titulo_formulario">Agregar Producto</h2>
+                <form class="formulario" data-form>
+                    <fieldset class="formulario_producto">
+                        <input name="nombre" id="nombre" class="input-producto" placeholder="nombre" type="text" data-nombre />
+                    </fieldset>
+                    <fieldset class="formulario_producto">
+                        <input name="precio" id="precio" class="input-producto" placeholder="precio" type="text" data-precio />
+                    </fieldset>
+                    <fieldset class="formulario_producto">
+                        <input name="imagen" id="imagen" class="input-producto" placeholder="imagen" type="text" data-imagen />
+                    </fieldset>
+                    <div class="formulario_botones">
+                        <button class="boton_enviar" type="submit" value="enviar" id="btn-enviar">Enviar</button>
+                        <button class="boton_limpiar" type="reset" value="limpiar" id="btn-limpiar">Limpiar</button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h1 class="titulo">AluraGeek</h1>
+        <p class="copyright">Alura Latam - Todos los derechos Reservados 2024.</p>
+        <p class="copyright">Leonardo Ponce</p>
+        <div class="logo_container">
+            <a href="https://www.linkedin.com/in/leonardo-fernando-ponce/" aria-label="de" target="_blank">
+                <img width="50" height="50" src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="linkedin" class="redes-sociales-logo" />
+            </a>
+            <a href="https://github.com/leoxk93" aria-label="de" target="_blank">
+                <img width="50" height="50" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github" class="redes-sociales-logo" />
+            </a>
+        </div>
+    </footer>
+    
+    <script src="js/controllers/main.js" type="module"></script>
+    <script src="js/services/product-services.js" type="module"></script>
+</body>
+</html>
